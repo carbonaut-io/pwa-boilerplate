@@ -51,7 +51,6 @@ export class ToastService {
     const toast = params || {};
     toast.type = 'warning';
     toast.message = message;
-    toast.timeout = 0;
 
     return this.create(toast);
   }

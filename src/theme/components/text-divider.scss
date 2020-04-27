@@ -1,0 +1,25 @@
+@import '../sizing.scss';
+@import '../variables.scss';
+
+.c-text-divider {
+  display: flex;
+  align-items: center;
+  color: var(--color-blue-500);
+  font-weight: 600;
+
+  &:before,
+  &:after {
+    content: '';
+    flex: 1 0 auto;
+    height: 1px;
+    background: var(--color-gray-400);
+  }
+
+  &:before {
+    margin-right: $size-md;
+  }
+
+  &:after {
+    margin-left: $size-md;
+  }
+}

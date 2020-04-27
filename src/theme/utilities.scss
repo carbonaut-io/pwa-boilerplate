@@ -63,6 +63,46 @@
   text-align: right;
 }
 
+.u-font-weight--regular {
+  font-weight: 400;
+}
+
+.u-font-weight--semibold {
+  font-weight: 600;
+}
+
+.u-font-weight--bold {
+  font-weight: 700;
+}
+
+.u-font-style--italic {
+  font-style: italic;
+}
+
+.u-text-decoration--underline {
+  text-decoration: underline;
+}
+
+.u-text-decoration--none {
+  text-decoration: none;
+}
+
+.u-text-transform--uppercase {
+  text-transform: uppercase;
+}
+
+.u-text-transform--lowercase {
+  text-transform: lowercase;
+}
+
+.u-text-transform--capitalize {
+  text-transform: capitalize;
+}
+
+.u-text-transform--none {
+  text-transform: none;
+}
+
 // WIDTH
 .u-width--10 {
   width: 10%;
@@ -180,6 +220,10 @@ $colors: (
   'success': var(--color-success),
   'warning': var(--color-warning),
   'error': var(--color-error),
+  'blue-100': var(--color-blue-100),
+  'blue-500': var(--color-blue-500),
+  'blue-700': var(--color-blue-700),
+  'gray-400': var(--color-gray-400),
 );
 
 @each $color, $color-value in $colors {

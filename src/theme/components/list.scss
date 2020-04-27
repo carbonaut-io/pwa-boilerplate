@@ -24,6 +24,7 @@
     .c-list__item {
       align-items: flex-start;
       .c-list__label {
+        margin-top: $size-xs;
         white-space: pre-line;
       }
     }

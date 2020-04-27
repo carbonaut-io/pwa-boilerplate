@@ -1,0 +1,67 @@
+@import 'sizing.scss';
+
+.l-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: $size-md;
+}
+
+.l-grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -$size-md;
+
+  &--2 {
+    > .l-grid__item {
+      width: 50%;
+    }
+  }
+
+  &--3 {
+    > .l-grid__item {
+      width: 33.3%;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    padding: $size-md;
+  }
+}
+
+.l-linelength {
+  max-width: 64 * $size-base;
+
+  &--tiny {
+    max-width: 20 * $size-base;
+  }
+
+  &--xs {
+    max-width: 26 * $size-base;
+  }
+
+  &--small {
+    max-width: 32 * $size-base;
+  }
+
+  &--medium {
+    max-width: 36 * $size-base;
+  }
+
+  &--large {
+    max-width: 40 * $size-base;
+  }
+
+  &--xl {
+    max-width: 52 * $size-base;
+  }
+}
+
+.l-footer {
+  margin-top: auto;
+}
